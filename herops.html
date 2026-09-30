@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en" id="top">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#080507">
+  <meta name="description" content="HerOps — a cyberpunk cybersecurity learning space by KrackedDev.">
+  <title>HerOps // Cybersecurity Operations</title>
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="herops.css">
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <canvas id="matrix" aria-hidden="true"></canvas>
+
+  <div class="preloader" id="preloader">
+    <div class="loader-shell">
+      <div class="loader-mark">HER<span>OPS</span></div>
+      <div class="loader-title">INITIALIZING CYBERSECURITY OPERATIONS</div>
+      <div class="loader-meta"><span id="loaderStage">BOOTING SECURE UI</span><strong id="loaderPct">0%</strong></div>
+      <div class="loader-track"><span id="loaderBar"></span></div>
+      <div class="loader-log" id="loaderLog">&gt; establishing controlled lab environment...</div>
+    </div>
+  </div>
+
+  <header class="ops-header">
+    <a class="ops-brand" href="index.html" aria-label="Return to HerStacks">
+      <img src="herops-logo.png" alt="HerOps">
+      <span>KRACKEDDEV / HEROPS</span>
+    </a>
+    <nav class="ops-nav" aria-label="HerOps navigation">
+      <a href="#mission">Mission</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#terminal">Terminal</a>
+      <a href="#ethics">Ethics</a>
+      <a href="#guild">Guild</a>
+      <a class="back-link" href="index.html">← HerStacks</a>
+    </nav>
+    <button class="ops-menu" id="opsMenu" type="button" aria-label="Open navigation">☰</button>
+  </header>
+
+  <main>
+    <section class="hero ops-wrap">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="live-dot"></span> OPS NODE 01 // ONLINE</div>
+        <div class="hero-kicker">CYBERSECURITY / ETHICAL HACKING / DEFENSE</div>
+        <h1>THINK LIKE<br><span>AN ATTACKER.</span><br>DEFEND LIKE<br>AN ENGINEER.</h1>
+        <p>HerOps is the cybersecurity-focused side of KrackedDev — a space for learning, controlled labs, ethical hacking practice, defensive thinking and community-driven security exploration.</p>
+        <div class="hero-actions">
+          <a class="ops-btn" href="#terminal">ENTER LAB TERMINAL</a>
+          <a class="ops-btn ghost" target="_blank" rel="noopener" href="https://krackeddevs.com/guilds/krackeddev-herops">OPEN HEROPS GUILD ↗</a>
+        </div>
+        <div class="hero-status"><span>MODE</span> CONTROLLED LAB <i></i><span>ACCESS</span> AUTHORIZED LEARNING <i></i><span>STATUS</span> ACTIVE</div>
+      </div>
+
+      <div class="hero-visual reveal" aria-label="HerOps cyber operations interface">
+        <div class="radar">
+          <div class="radar-ring ring-a"></div><div class="radar-ring ring-b"></div><div class="radar-ring ring-c"></div>
+          <div class="radar-cross h"></div><div class="radar-cross v"></div><div class="radar-sweep"></div>
+          <span class="node n1"></span><span class="node n2"></span><span class="node n3"></span><span class="node n4"></span>
+          <span class="node-label l1">LAB-01</span><span class="node-label l2">DEF-07</span><span class="node-label l3">WEB-12</span>
+          <div class="radar-core">H</div>
+        </div>
+        <div class="hud-card top"><small>THREAT MODEL</small><strong>SIMULATION</strong><em>NO LIVE TARGETS</em></div>
+        <div class="hud-card bottom"><small>ETHICAL HACKER</small><strong>AUTHORIZED</strong><em>DEFENSIVE MINDSET</em></div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="HerOps status ticker">
+      <div>HEROPS // SECURITY OPERATIONS</div><div>AUTHORIZED LABS ONLY</div><div>LEARN / TEST / DOCUMENT / DEFEND</div><div>KRACKEDDEV CYBERSEC COMMUNITY</div>
+    </section>
+
+    <section class="section ops-wrap" id="mission">
+      <div class="section-head reveal"><div><div class="section-num">01 / MISSION CONTROL</div><h2>BUILD THE<br>SECURITY MINDSET.</h2></div><p>HerOps is designed around practical learning: understand how systems fail, test only where permission exists, document what happened, and turn findings into stronger defenses.</p></div>
+      <div class="mission-grid">
+        <article class="mission-card reveal"><span>01</span><div class="icon">⌁</div><h3>RECON</h3><p>Learn how to map an authorized lab environment and understand the attack surface without touching real-world targets.</p><b>LAB / DISCOVERY</b></article>
+        <article class="mission-card reveal"><span>02</span><div class="icon">▣</div><h3>TEST</h3><p>Practice security concepts in controlled challenges where experiments are isolated, repeatable and safe.</p><b>LAB / VALIDATION</b></article>
+        <article class="mission-card reveal"><span>03</span><div class="icon">◈</div><h3>DEFEND</h3><p>Translate observations into hardening ideas, secure development habits and better incident awareness.</p><b>DEFENSE / HARDENING</b></article>
+        <article class="mission-card reveal"><span>04</span><div class="icon">✦</div><h3>DOCUMENT</h3><p>Write clear notes, reproduce findings responsibly and communicate security issues without exposing people to unnecessary risk.</p><b>REPORT / COMMUNITY</b></article>
+      </div>
+    </section>
+
+    <section class="section dashboard-section" id="dashboard">
+      <div class="ops-wrap">
+        <div class="section-head reveal"><div><div class="section-num">01.5 / LIVE OPS DASHBOARD</div><h2>MISSION<br>TELEMETRY.</h2></div><p>A live-looking interface for the HerOps experience. Values update locally to simulate an operations room; it does not connect to or monitor real systems.</p></div>
+        <div class="ops-dashboard reveal">
+          <div class="dashboard-topbar"><span><i class="status-pulse"></i> HEROPS OPS GRID // SIMULATION</span><span id="dashClock">--:--:-- MYT</span><b>LOCAL FEED</b></div>
+          <div class="dashboard-stats">
+            <article class="dash-stat"><small>NODE STATUS</small><strong class="cyan">ONLINE</strong><span>HEROPS-CORE / 01</span></article>
+            <article class="dash-stat"><small>ACTIVE LABS</small><strong id="activeLabs">07</strong><span>AUTHORIZED SESSIONS</span></article>
+            <article class="dash-stat"><small>SECURITY ALERTS</small><strong id="alertCount">02</strong><span>TRAINING EVENTS</span></article>
+            <article class="dash-stat"><small>MISSION UPTIME</small><strong id="uptime">99.98%</strong><span>SIMULATED NODE</span></article>
+          </div>
+          <div class="dashboard-main">
+            <div class="mission-progress-panel">
+              <div class="panel-title"><span>MISSION // NIGHTWATCH-01</span><b id="missionPercent">68%</b></div>
+              <div class="progress-track"><span id="missionProgress"></span></div>
+              <div class="mission-steps"><span class="done">01 RECON</span><span class="done">02 ENUMERATE</span><span class="active">03 VALIDATE</span><span>04 REPORT</span></div>
+              <div class="telemetry-grid">
+                <div><small>LAB TARGET</small><strong>LAB-DEMO-07</strong></div>
+                <div><small>SCOPE</small><strong>CONTROLLED</strong></div>
+                <div><small>THREAT LEVEL</small><strong class="cyan">LOW / TRAINING</strong></div>
+                <div><small>ACCESS</small><strong>AUTHORIZED</strong></div>
+              </div>
+            </div>
+            <div class="event-feed-panel">
+              <div class="panel-title"><span>EVENT STREAM</span><b>LIVE</b></div>
+              <div class="event-feed" id="eventFeed" aria-live="polite">
+                <div><time>20:14:02</time><span class="ok">OK</span><p>LAB-07 heartbeat received</p></div>
+                <div><time>20:13:41</time><span class="info">INFO</span><p>Scope verification completed</p></div>
+                <div><time>20:13:09</time><span class="warn">WARN</span><p>Sample credential pattern detected</p></div>
+                <div><time>20:12:46</time><span class="ok">OK</span><p>Ethics gate remains enabled</p></div>
+                <div><time>20:12:18</time><span class="info">INFO</span><p>Mission NIGHTWATCH-01 resumed</p></div>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard-footer"><span>● ALL TELEMETRY IS SYNTHETIC</span><span>NO LIVE TARGETS / NO EXTERNAL SCANNING</span><span id="dashPulse">SIGNAL STABLE</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section terminal-section" id="terminal">
+      <div class="ops-wrap">
+        <div class="section-head reveal"><div><div class="section-num">02 / SECURE TERMINAL</div><h2>ACCESS THE<br>LAB CONSOLE.</h2></div><p>A simulated cybersecurity terminal for the HerOps experience. Commands are intentionally non-destructive and operate only inside this page.</p></div>
+        <div class="terminal-shell reveal">
+          <div class="terminal-bar"><span class="terminal-dots"><i></i><i></i><i></i></span><strong>herops://secure-console</strong><span class="terminal-state">● SECURE</span></div>
+          <div class="terminal-body" id="terminalOutput" role="log" aria-live="polite"></div>
+          <div class="terminal-input-row"><span>analyst@herops:~$</span><input id="terminalInput" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="type help..." aria-label="HerOps terminal command"><button id="terminalRun" type="button">RUN</button></div>
+          <div class="terminal-quick">
+            <button data-command="help">help</button><button data-command="status">status</button><button data-command="whoami">whoami</button><button data-command="scan --demo">scan --demo</button><button data-command="lab">lab</button><button data-command="guild">guild</button><button data-command="clear">clear</button>
+          </div>
+          <div class="terminal-warning">SIMULATION // No real systems are scanned. Use cybersecurity skills only on systems you own or are explicitly authorized to test.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section ethics" id="ethics">
+      <div class="ops-wrap ethics-grid">
+        <div class="ethics-copy reveal"><div class="section-num">03 / ETHICAL HACKER</div><h2>SKILLS WITH<br>BOUNDARIES.</h2><p>Ethical hacking is not just about finding weaknesses. It is about permission, scope, evidence, responsible communication and reducing harm.</p><div class="principles"><div><strong>01</strong><span>GET PERMISSION</span></div><div><strong>02</strong><span>RESPECT SCOPE</span></div><div><strong>03</strong><span>PROTECT DATA</span></div><div><strong>04</strong><span>REPORT RESPONSIBLY</span></div></div></div>
+        <div class="access-card reveal"><div class="access-head"><span>ACCESS PROTOCOL</span><b>HEROPS / E-01</b></div><div class="fingerprint"><div class="fingerprint-lines"></div><span>AUTHORIZED<br>LEARNER</span></div><div class="access-grid"><div><small>ROLE</small><strong>ETHICAL HACKER</strong></div><div><small>ZONE</small><strong>CONTROLLED LAB</strong></div><div><small>MISSION</small><strong>DEFEND SYSTEMS</strong></div><div><small>POLICY</small><strong>NO UNAUTHORIZED ACCESS</strong></div></div><div class="access-footer">IDENTITY VERIFIED // TRAINING MODE</div></div>
+      </div>
+    </section>
+
+    <section class="section network-section">
+      <div class="ops-wrap">
+        <div class="section-head reveal"><div><div class="section-num">04 / NETWORK MAP</div><h2>CONNECTED<br>BY SECURITY.</h2></div><p>Decorative threat-map visualization for the HerOps interface. Nodes represent learning areas, not live infrastructure.</p></div>
+        <div class="network-map reveal">
+          <svg viewBox="0 0 1200 420" role="img" aria-label="Decorative cybersecurity network map">
+            <g class="map-lines"><line x1="80" y1="210" x2="300" y2="90"/><line x1="80" y1="210" x2="320" y2="320"/><line x1="300" y1="90" x2="610" y2="70"/><line x1="320" y1="320" x2="610" y2="350"/><line x1="610" y1="70" x2="890" y2="170"/><line x1="610" y1="350" x2="890" y2="250"/><line x1="890" y1="170" x2="1120" y2="210"/><line x1="890" y1="250" x2="1120" y2="210"/><line x1="610" y1="70" x2="610" y2="350"/></g>
+            <g class="map-node"><circle cx="80" cy="210" r="18"/><text x="50" y="250">CORE</text></g><g class="map-node"><circle cx="300" cy="90" r="14"/><text x="260" y="60">WEB LAB</text></g><g class="map-node"><circle cx="320" cy="320" r="14"/><text x="270" y="365">DEFENSE</text></g><g class="map-node"><circle cx="610" cy="70" r="14"/><text x="570" y="40">RECON</text></g><g class="map-node"><circle cx="610" cy="350" r="14"/><text x="560" y="395">REPORT</text></g><g class="map-node"><circle cx="890" cy="170" r="14"/><text x="850" y="140">ETHICS</text></g><g class="map-node"><circle cx="890" cy="250" r="14"/><text x="850" y="300">CTF LAB</text></g><g class="map-node core"><circle cx="1120" cy="210" r="24"/><text x="1080" y="260">HEROPS</text></g>
+          </svg>
+          <div class="map-overlay">NETWORK VISUAL // STATIC DEMO // <span>ALL NODES CONTROLLED</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section guild-section" id="guild">
+      <div class="ops-wrap guild-panel reveal">
+        <div class="guild-logo-wrap"><img src="herops-logo.png" alt="HerOps logo"></div>
+        <div><div class="section-num">05 / HEROPS GUILD</div><h2>READY TO<br>ENTER THE OPS?</h2><p>Join the official HerOps guild for cybersecurity-focused community activity, learning resources, hands-on labs and controlled challenges.</p><div class="guild-meta"><span>KRACKEDDEV</span><span>CYBERSECURITY</span><span>ETHICAL HACKING</span><span>CONTROLLED LABS</span></div><a class="ops-btn" target="_blank" rel="noopener" href="https://krackeddevs.com/guilds/krackeddev-herops">OPEN OFFICIAL HEROPS GUILD ↗</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ops-footer"><div class="ops-wrap"><span>KRACKEDDEV / HEROPS</span><span>CYBERSECURITY LEARNING // 2026</span><a href="index.html">← RETURN TO HERSTACKS</a></div></footer>
+
+  <script src="herops.js"></script>
+</body>
+</html>
